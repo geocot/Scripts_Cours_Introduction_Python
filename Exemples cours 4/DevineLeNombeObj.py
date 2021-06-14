@@ -8,9 +8,8 @@ class app:
         self.fen.title("Devine le nombre")
         self.fen.geometry("480x100")
         self.fen.resizable(0, 0)
-        self.prenomTxt = StringVar()
         self.nombreUsagerTxt = StringVar()
-        self.afficheUsagerTxt = StringVar(value="Devine le nombre entre 0 et 100")
+        self.afficheUsagerTxt = StringVar()
         self.afficheUsager = Label(self.fen, textvariable=self.afficheUsagerTxt).place(relx=0.4, rely=0.20, anchor='center')
 
         self.nombreUsagerLabel = Label(self.fen, text="Entrer un nombre").place(x=0.0, y=30.0, anchor='nw')
