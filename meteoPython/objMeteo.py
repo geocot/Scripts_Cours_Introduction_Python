@@ -1,6 +1,8 @@
 import bs4 as bs
 import urllib.request
 import time
+import warnings
+warnings.filterwarnings('ignore', category=bs.builder.XMLParsedAsHTMLWarning)
 
 class Meteo:
     "Lecteur météo en format XML"
@@ -86,4 +88,4 @@ class Meteo:
 if __name__ == '__main__':
  m = Meteo('https://meteo.gc.ca/rss/city/qc-133_f.xml')
  m.lireMeteo()
- print(m.condition)
+ print(m.condition, m.temperature)
