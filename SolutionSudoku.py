@@ -41,7 +41,7 @@ def parcourGrille(grille):
     ligne = 0
     colonne = 0
     compteurCaseNon0 = 0
-    compteurCaseNonChange = 0
+    compteurCaseNonChangee = 0
     listeValeursValides = []
     rechercher = True
     tempsDepart = time.time()
@@ -53,10 +53,10 @@ def parcourGrille(grille):
                 if testValeur(grille, ligne, colonne, valeur):
                     listeValeursValides.append(valeur)
             if len(listeValeursValides) == 1:
-                compteurCaseNonChange = 0
+                compteurCaseNonChangee = 0
                 grille[ligne][colonne] = listeValeursValides[0]  # Modification de la valeur de la grille
             listeValeursValides.clear()
-        compteurCaseNonChange+=1
+        compteurCaseNonChangee+=1
         compteurCaseNon0+=1
         colonne+=1
         if colonne ==9:
