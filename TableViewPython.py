@@ -36,3 +36,5 @@ class Window(QWidget):
 App = QApplication(sys.argv)
 window = Window()
 sys.exit(App.exec())
+
+#Vidéo explicative disponible ici: https://youtu.be/r91WUgW5N3M
