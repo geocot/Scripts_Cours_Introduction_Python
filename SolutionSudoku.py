@@ -68,7 +68,7 @@ def parcourGrille(grille):
         if compteurCaseNon0>81:
             rechercher=False
             print("Voici la solution")
-        if compteurCaseNonChange >162:
+        if compteurCaseNonChangee >162:
             rechercher=False
             print("Impossible à trouver, voici où je ne peux plus avancer")
     tempsFin = time.time()
