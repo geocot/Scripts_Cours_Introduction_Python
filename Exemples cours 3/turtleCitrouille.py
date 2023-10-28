@@ -1,3 +1,7 @@
+#Dessin d'un ctitroulle d'halloween avec Python. 
+#Vidéo disponible ici: https://youtu.be/EQqKdO8WiZo
+#Martin Couture
+
 import turtle
 
 window = turtle.Screen()
