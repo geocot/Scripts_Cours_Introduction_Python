@@ -1,3 +1,4 @@
+#Martin Couture
 #Explication du code dans cette vidéo: https://youtu.be/N4FWQ1PGIKI
 import math
 RAYON_E = 6378.137
