@@ -1,0 +1,16 @@
+#Explication du code dans cette vidéo: https://youtu.be/N4FWQ1PGIKI
+import math
+RAYON_E = 6378.137
+RAYON_P = 6356.752314
+EXENTRICITE = 0.081819191
+ANGLE = 60
+
+def angleRAD(angle):
+    return angle*(math.pi/180)
+
+def calcCirconference(rayon):
+    return 2 * math.pi * rayon
+
+r = (RAYON_E * math.cos(angleRAD(ANGLE)))/(math.sqrt(1-math.pow(EXENTRICITE,2)*math.pow(math.sin(angleRAD(ANGLE)),2)))
+
+print(calcCirconference(r)/360, "Km")
